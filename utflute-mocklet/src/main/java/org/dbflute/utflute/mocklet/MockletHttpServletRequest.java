@@ -17,6 +17,7 @@ package org.dbflute.utflute.mocklet;
 
 import java.util.Locale;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
@@ -77,4 +78,6 @@ public interface MockletHttpServletRequest extends HttpServletRequest, Mocklet {
     void setLocalPort(int localPort);
 
     void setRemotePort(int remotePort);
+
+    ServletContext getServletContext();
 }

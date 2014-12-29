@@ -503,4 +503,8 @@ public class MockletHttpServletRequestImpl implements MockletHttpServletRequest 
     public String getRealPath(String path) {
         return path;
     }
+
+    public ServletContext getServletContext() {
+        return servletContext;
+    }
 }
