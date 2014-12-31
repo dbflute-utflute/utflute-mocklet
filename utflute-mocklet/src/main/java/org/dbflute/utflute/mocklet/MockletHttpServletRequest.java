@@ -1,5 +1,5 @@
 /*
- * Copyright 2014-2014 the original author or authors.
+ * Copyright 2014-2015 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@ package org.dbflute.utflute.mocklet;
 
 import java.util.Locale;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
@@ -77,4 +78,6 @@ public interface MockletHttpServletRequest extends HttpServletRequest, Mocklet {
     void setLocalPort(int localPort);
 
     void setRemotePort(int remotePort);
+
+    ServletContext getServletContext();
 }
