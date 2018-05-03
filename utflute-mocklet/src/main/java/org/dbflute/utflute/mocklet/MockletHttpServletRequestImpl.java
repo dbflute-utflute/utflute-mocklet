@@ -170,7 +170,7 @@ public class MockletHttpServletRequestImpl implements MockletHttpServletRequest 
     }
 
     public String getContextPath() {
-        return servletContext.getServletContextName();
+        return servletContext.getContextPath();
     }
 
     public String getQueryString() {
